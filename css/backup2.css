@@ -1,0 +1,83 @@
+@import url(common.css);
+
+
+header{
+  width: 100%
+}
+#top_nav{
+  width: 1400px;
+  height: 40px;
+  background: #333;
+  margin: 0 auto;
+}
+#top_nav .nav_in{
+  width: 1400px;
+  height: 40px;
+  margin: 0 auto;
+  background: #333;
+}
+/* ----- 검색창 ----- */
+#top_nav .nav_in .search_box{
+  display: inline-block;
+}
+#top_nav .nav_in span{
+  float: left;
+  color: white;
+  font-size: 25px;
+  display: inline-block ;
+  margin-top: 8px;
+  margin-left: 10px;
+}
+#top_nav .nav_in .search_box input{
+  border-radius: 10px;
+  padding: 3px;
+  margin-top: 7px;
+  margin-left: 5px;
+}
+/* ----- 우측 메뉴 ----- */
+#top_nav .nav_in .top_menu{
+  float: right;
+  padding-top: 10px;
+}
+#top_nav .nav_in .top_menu ul li{
+  float: left;
+  border-left: 1px solid #fff;
+  background: #333;
+  color: #fff;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 15px;
+}
+#top_nav .nav_in .top_menu ul li:nth-child(1){
+  border: none;
+}
+#top_nav .nav_in .top_menu ul li:nth-child(5){
+  padding-right: none;
+}
+
+
+/* ----- main menu ----- */
+header #main_menu{
+  width: 1400px;
+  margin: 0 auto;
+}
+header #main_menu .main_menu_in{
+  width: 1400px;
+}
+#main_menu .main_menu_in ul li{
+  float: left;
+  width: 200px;
+  height: 100px;
+  background: #005c3d;
+  text-align: center;
+  line-height: 100px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+}
+/* 로고 이미지사이즈 조정 */
+#main_menu .main_menu_in ul li:nth-child(4) img{
+  width: 50%;
+}
+
+

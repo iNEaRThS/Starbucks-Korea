@@ -1,0 +1,870 @@
+@import url(common.css);
+
+#wrap{
+  background: #f6f5ef;
+}
+
+header{
+  width: 100%
+}
+#top_nav{
+  width: 1400px;
+  height: 40px;
+  background: #333;
+  margin: 0 auto;
+}
+#top_nav .nav_in{
+  width: 1400px;
+  height: 40px;
+  margin: 0 auto;
+  background: #333;
+}
+/* ----- 검색창 ----- */
+#top_nav .nav_in .search_box{
+  display: inline-block;
+}
+#top_nav .nav_in span{
+  color: white;
+  font-size: 25px;
+  display: inline-block ;
+  margin-top: 8px;
+  margin-left: 10px;
+}
+#top_nav .nav_in .search_box .input_box{
+  border-radius: 10px;
+  padding: 3px;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+/* ----- 우측 메뉴 ----- */
+#top_nav .nav_in .top_menu{
+  float: right;
+  padding-top: 10px;
+}
+#top_nav .nav_in .top_menu ul li{
+  float: left;
+  border-left: 1px solid #fff;
+  background: #333;
+  color: #fff;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 15px;
+}
+#top_nav .nav_in .top_menu ul li:nth-child(1){
+  border: none;
+}
+#top_nav .nav_in .top_menu ul li:nth-child(5){
+  padding-right: 0;
+}
+#top_nav .nav_in .top_menu ul li:hover a{
+  border-bottom: 1px solid #fff;
+}
+
+
+/* ----- main menu ----- */
+header #main_menu{
+  width: 1400px;
+  margin: 0 auto;
+}
+header #main_menu .main_menu_in{
+  width: 1400px;
+  position: relative;
+  height: 100px;
+}
+#main_menu .main_menu_in ul .head_menu{
+  float: left;
+  width: 200px;
+  height: 100px;
+  background: #005c3d;
+  text-align: center;
+  line-height: 100px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  transition: all 0.3s;
+}
+#main_menu .main_menu_in ul li:nth-child(6){
+  line-height: 50px;
+}
+/* 로고 이미지사이즈 조정 */
+#main_menu .main_menu_in ul li:nth-child(4) img{
+  width: 50%;
+}
+#main_menu .main_menu_in ul .head_menu:hover{
+  background-color: #028157;
+}
+#main_menu .main_menu_in ul .head_menu:nth-child(4):hover{
+  background-color: #005c3d;
+}
+
+
+/* ----- sub ----- */
+#main_menu .main_menu_in ul li .sub{
+  width: 1400px;
+  background: #333;
+  margin: 0 auto;
+  position: absolute;
+  top: 100px;
+  left: 0px;
+  display: none;
+}
+#main_menu .main_menu_in ul li .sub ul li{
+  box-sizing: border-box;
+  font-weight: bold;
+  width: 280px;
+  height: 400px;
+  float: left;
+  font-size: 16px;
+  line-height: 70px;
+  border-right: 1px solid #666;
+  transition: all 0.5s;
+}
+#main_menu .main_menu_in ul li .sub ul li:nth-child(5){
+  border: none;
+}
+#main_menu .main_menu_in ul li .sub ul li:hover{
+  background: #444;
+}
+#main_Menu .main_menu_in ul li .sub ul li ul{
+  text-align: center;
+}
+#main_menu .main_menu_in ul li .sub ul li ul li{
+  width: 280px;
+  margin-left: 0;
+  height: 60px;
+  line-height: 60px;
+  font-size: 15px;
+  font-weight: normal;
+  border: none;
+  text-align: center;
+}
+#main_menu .main_menu_in ul li .sub ul li ul li:hover{
+  background: #666;
+}
+#main_menu .main_menu_in ul li .sub ul li ul li:hover a{
+  border-bottom: 1px solid #fff;
+}
+
+/* ----- visual ----- */
+#slide{
+  width: 1400px;
+  margin: 0 auto;
+}
+#slide .slide_in{
+  width: 1400px;
+}
+/* ----- notice, promotion ----- */
+#notice_promotion{
+  width: 1400px;
+  margin: 0 auto;
+}
+
+/* ----- notice ----- */
+#notice_promotion #notice{
+  width: 700px;
+  float: left;
+  position: relative;
+}
+#notice_promotion #notice .notice_in{
+  width: 700px;
+  height: 70px;
+  background: #333;
+}
+#notice_promotion #notice .notice_in span{
+  font-size: 24px;
+  font-weight: bold;
+  color: white;  
+  display: inline-block;
+  margin-left: 30px;
+  margin-right: 30px;
+  border-right: 2px solid #fff;
+  padding-right: 30px;
+  margin-top: 20px;
+}
+#notice_promotion #notice .notice_in p{
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  display: inline-block;
+  margin-top: 22px;
+}
+#notice_promotion #notice .notice_in img{
+  float: right;
+  width: 40px;
+  height: 30px;
+  padding: 3px;
+  border: 3px solid #fff;
+  border-radius: 100%;
+  margin-top: 13px;
+  margin-right: 10px;
+}
+
+/* ----- notice > notice_show ----- */
+#notice_promotion #notice .notice_show{
+  width: 700px;
+  height: 600px;
+  position: absolute;
+  z-index: 100;
+  background: beige;
+  display: none;
+  /* display: none; */
+}
+#notice_promotion #notice .notice_show h3{
+  font-size: 36px;
+  margin-left: 20px;
+  margin-top: 10px;
+  padding-bottom: 7px;
+  border-bottom: 2px solid #111;
+  width: 660px;
+  color: #111;
+}
+#notice_promotion #notice .notice_show h3 span{
+  font-size: 22px;
+  font-weight: bold;
+  margin-left: 40px;
+}
+#notice_promotion #notice .notice_show ul li{
+  width: 660px;
+  height: 76px;
+  margin-left: 20px;
+  border-bottom: 1px solid #111;
+  box-sizing: border-box;
+
+}
+#notice_promotion #notice .notice_show ul li p{
+  width: 660px;
+  float: left;
+  font-size: 28px;
+  line-height: 76px;
+  transition: all 0.3s;
+}
+#notice_promotion #notice .notice_show ul li:hover p{
+  display: block;
+  font-weight: bold;
+  background: rgba(255,255,255,0.5);
+}
+
+/* ----- promotion ----- */
+#notice_promotion #promotion{
+  width: 700px;
+  float: right;
+}
+#notice_promotion #promotion .promotion_in{
+  width: 700px;
+  height: 70px;
+  background: #005c3d;
+}
+#notice_promotion #promotion .promotion_in span{
+  float: right;
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 18px;
+  margin-right: 50px;
+}
+#notice_promotion #promotion .promotion_in img{
+  float: right;
+  width: 40px;
+  height: 30px;
+  padding: 3px;
+  border: 3px solid #fff;
+  border-radius: 100%;
+  margin-top: 13px;
+  margin-right: 10px;
+}
+
+/* ----- promotion>promotion_show ----- */
+#promotion .promotion_show{
+  position: absolute;
+  width: 700px;
+  height: 600px;
+  display: none;
+  z-index: 100;
+}
+#promotion .promotion_show .changeimg{
+  position: absolute;
+  z-index: 200;
+}
+#promotion .promotion_show .changeimg ul li{
+  position: absolute;
+  top: 0;
+  display: none;
+}
+#promotion .promotion_show .changeimg ul li:first-child{
+  display: block;
+}
+#promotion .promotion_show .changeimg ul li a img{
+  width: 700px;
+  height: 600px;
+}
+
+/* ----- rewards_banner -----*/
+#rewards_banner{
+  width: 1400px;
+  height: 600px;
+  margin: 0 auto;
+}
+
+/* ----- starbucks_rewards ----- */
+#rewards_banner #starbucks_rewards{
+  width: 700px;
+  height: 600px;
+  float: left;
+}
+#rewards_banner #starbucks_rewards .starbucks_rewards_in{
+  width: 700px;
+  height: 600px;
+  background: #005c3d;
+  position: relative;
+}
+#rewards_banner #starbucks_rewards .starbucks_rewards_in .main_logo{
+  position: absolute;
+  left: 135px;
+  top: 125px;
+  /*
+    top:20px
+    left: 175px;
+  */
+}
+#rewards_banner #starbucks_rewards .starbucks_rewards_in .main_logo img{
+  width: 450px;
+  height: 350px;
+  /* width: 350px;
+  height: 250px; */
+}
+#rewards_banner #starbucks_rewards .starbucks_rewards_in .rewards_text{
+  width: 680px;
+  height: 300px;
+  position: absolute;
+  left: 10px;
+  bottom: 20px;
+  text-align: center;
+  color: #fff;
+  display: none;
+}
+#rewards_banner #starbucks_rewards .starbucks_rewards_in .rewards_text h3{
+  font-size: 26px;
+  font-weight: normal;
+  margin-bottom: 10px;
+}
+#rewards_banner #starbucks_rewards .starbucks_rewards_in .rewards_text span{
+  font-size: 20px;
+}
+#rewards_banner #starbucks_rewards .starbucks_rewards_in .rewards_text .rewards_btn{
+  display: block;
+  width: 680px;
+  height: 70px;
+  margin-top: 20px;
+}
+#rewards_banner #starbucks_rewards .starbucks_rewards_in .rewards_text .btn1 a{
+  width: 100px;
+  height: 20px;
+  border: 3px solid #fff;
+  border-radius: 5%;
+  float: left;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 150px;
+  line-height: 20px;
+  transition: all 0.5s;
+}
+#rewards_banner #starbucks_rewards .starbucks_rewards_in .rewards_text .btn1:hover a{
+  background: #fff;
+  color: #333;
+  font-weight: bold;
+  font-size: 22px;
+}
+#rewards_banner #starbucks_rewards .starbucks_rewards_in .rewards_text .btn2 a{
+  width: 100px;
+  height: 20px;
+  border: 3px solid #fff;
+  border-radius: 5%;
+  float: right;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  margin-right: 150px;
+  line-height: 20px;
+  transition: all 0.5s;
+}
+#rewards_banner #starbucks_rewards .starbucks_rewards_in .rewards_text .btn2:hover a{
+  background: #fff;
+  color: #333;
+  font-weight: bold;
+  font-size: 22px;
+}
+#rewards_banner #starbucks_rewards .starbucks_rewards_in .rewards_text .border_line{
+  width: 680px;
+  height: 2px;
+  background: #fff;
+  margin-bottom: 10px;
+}
+#rewards_banner #starbucks_rewards .starbucks_rewards_in .rewards_text .e-gift_text{
+  width: 660px;
+  text-align: left;
+  line-height: 40px;
+  display: inline-block;
+}
+#rewards_banner #starbucks_rewards .starbucks_rewards_in .rewards_text .e-gift_text .e-gift{
+  width: 180px;
+  height: 30px;
+  font-size: 18px;
+  line-height: 40px;
+  background: #028157;
+  border-radius: 5%;
+  display: inline-block;
+  text-align: center;
+  padding-bottom: 5px;
+  margin-left: 180px;
+  transition: all 0.5s;
+}
+#rewards_banner #starbucks_rewards .starbucks_rewards_in .rewards_text .e-gift_text .e-gift:hover{
+  box-shadow: 0px 0px 20px #333;
+}
+
+/* ----- event_banner -----*/
+#rewards_banner #event_banner{
+  width: 700px;
+  float: right;
+}
+#rewards_banner #event_banner .event_banner_in{
+  width: 700px;
+  height: 600px;
+  background: #845d42;
+  position: relative;
+}
+
+/* ----- event_banner img -----*/
+#rewards_banner #event_banner .event_banner_in .banner_img{
+  width: 700px;
+  height: 600px;
+  overflow: hidden;
+  position: relative;
+}
+
+/* ----- event_banner banner_btn -----*/
+#rewards_banner #event_banner .event_banner_in .banner_img .banner_btn{
+  width: 180px;
+  height: 70px;
+  border: 8px solid #5757ff;
+  border-radius: 20px;
+  box-sizing: border-box;
+  color: #2196f3;
+  text-align: center;
+  font-size: 26px;
+  line-height: 56px;
+  font-weight: bold;
+  position: absolute;
+  right: 120px;
+  bottom: 200px;
+  box-shadow: 2px 2px 5px #999;
+  transition: all 0.3s;
+  display: none;
+}
+#rewards_banner #event_banner .event_banner_in .banner_img .banner_btn a{
+  display: block;
+}
+#rewards_banner #event_banner .event_banner_in .banner_img .banner_btn:hover{
+  background: #2196f3;
+  border: none;
+}
+#rewards_banner #event_banner .event_banner_in .banner_img .banner_btn:hover a{
+  color: #fff;
+  line-height: 70px;
+}
+
+/* ----- pick style ----- */
+#pick{
+  width: 1400px;
+  height: 600px;
+  margin: 0 auto;
+  position: relative;
+  background: url(../image/pick_in_1_1.png) no-repeat;
+  background-size: 100%;
+  margin-top: 70px;
+  overflow: hidden;
+}
+#pick .pick_in{
+  position: absolute;
+  width: 1000px;
+  height: 600px;
+  background: url(../image/pick_in_2.png) no-repeat;
+  margin-left: -1000px;
+}
+#pick .pick_in .pick_text{
+  position: relative;
+  color: #fff;
+}
+#pick .pick_in .pick_text h3{
+  font-size: 85px;
+  font-weight: 1000;
+  line-height: 95px;
+  position: absolute;
+  left: 20px;
+  top: 5px;
+  text-shadow: 2px 2px 5px #666;
+}
+#pick .pick_in .pick_text .border-line{
+  width: 880px;
+  height: 3px;
+  position: absolute;
+  background: #fff;
+  top: 298px;
+  left: 5px;
+}
+#pick .pick_in .pick_text h4{
+  position: absolute;
+  font-size: 30px;
+  top: 315px;
+  left: 20px;
+  line-height: 40px;
+}
+#pick .pick_in .pick_text .pick_info{
+  position: absolute;
+  top: 400px;
+  left: 20px;
+  font-size: 19px;
+  line-height: 30px;
+}
+#pick .pick_in .pick_text .pick_btn{
+  width: 120px;
+  height: 20px;
+  padding: 10px;
+  text-align: center;
+  border: 3px solid #fff;
+  border-radius: 15px;
+  position: absolute;
+  left: 20px;
+  top: 540px;
+  font-size: 18px;
+  line-height: 20px;
+  transition: all 0.3s;
+}
+#pick .pick_in .pick_text .pick_btn:hover{
+  background: #fff;
+}
+#pick .pick_in .pick_text .pick_btn:hover a{
+  color: #333;
+  font-weight: bold;
+}
+#pick .pick_in .pick_text .pick_food1{
+  position: absolute;
+  left: 500px;
+  top: 50px;
+}
+#pick .pick_in .pick_text .pick_food1 img{
+  width: 110px;
+  height: 230px;
+  position: relative;
+}
+#pick .pick_in .pick_text .pick_food1 .food_text{
+  color: #fff;
+  width: 200px;
+  font-size: 22px;
+  display: inline-block;
+  position: absolute;
+  bottom: 10px;
+  font-weight: bold;
+}
+#pick .pick_in .pick_text .pick_food2{
+  position: absolute;
+  left: 480px;
+  top: 320px;
+}
+#pick .pick_in .pick_text .pick_food2 img{
+  width: 130px;
+  height: 130px;
+  position: relative;
+}
+#pick .pick_in .pick_text .pick_food2 .food_text{
+  color: #fff;
+  width: 200px;
+  font-size: 22px;
+  display: inline-block;
+  position: absolute;
+  top: 10px;
+  font-weight: bold;
+}
+
+/* ----- reserve ----- */
+#reserve{
+  width: 1400px;
+  height: 600px;
+  margin: 0 auto;
+  background: #fffcee;
+  position: relative;
+}
+#reserve .reserve_in .border_box{
+  width: 1300px;
+  height: 500px;
+  border: 4px solid #333;
+  position: absolute;
+  top: 50px;
+  left: 50px;
+}
+#reserve .reserve_in .border_box img{
+  width: 100px;
+  height: 120px;
+  position: absolute;
+  left: 20px;
+  top: 16px;
+}
+#reserve .reserve_in .border_box h3{
+  font-size: 60px;
+  font-weight: bold;
+  position: absolute;
+  top: 15px;
+  left: 180px;
+}
+#reserve .reserve_in .border_box h4{
+  font-size: 30px;
+  position: absolute;
+  top: 90px;
+  right: 80px;
+  padding: 10px 0;
+  letter-spacing: 2px;
+}
+#reserve .reserve_in ul{
+  position: relative;
+  top: 200px;
+  width: 1300px;
+  left: 40px;
+}
+#reserve .reserve_in ul li{
+  width: 220px;
+  height: 260px;
+  float: left;
+  left: 100px;
+  top: 30px;
+  margin-left: 50px;
+  margin-top: 20px;
+  padding: 20px;
+  border: 4px solid #333;
+  background: #fff;
+  box-shadow: 0px 0px 15px #333;
+  transition: all 0.3s;
+}
+#reserve .reserve_in ul li img{
+  width: 220px;
+  height: 260px;
+  transform: scale(1.1);
+}
+#reserve .reserve_in ul li:hover{
+  transform: scale(1.1);
+}
+#reserve .reserve_in .border_box .border_box2{
+  width: 1300px;
+  height: 4px;
+  background: #333;
+  position: absolute;
+  top: 300px;
+}
+
+/* ----- exp ----- */
+#exp{
+  width: 1400px;
+  height: 400px;
+  margin: 0 auto;
+  background: url(../image/exp_1.png) no-repeat;
+}
+#exp .exp_in{
+  width: 1400px;
+  height: 400px;
+  position: relative;
+  color: #333;
+  overflow: hidden;
+}
+#exp .exp_in h3{
+  position: absolute;
+  font-size: 50px;
+  top:20px;
+  right: 40px;
+}
+#exp .exp_in .car{
+  position: absolute;
+  bottom: 0px;
+  left: -300px;
+  z-index: 10;
+  display: none;
+  animation: car 5s infinite alternate;
+}
+#exp .exp_in .store1{
+  position: absolute;
+  width: 250px;
+  height: 120px;
+  border: 2px solid #333;
+  border-radius: 15px;
+  top: 100px;
+  left: 500px;
+  padding: 10px;
+  cursor: pointer;
+  transition: all 0.3s;
+  animation: store 3s infinite alternate;
+}
+#exp .exp_in .store1:hover{
+  box-shadow: 1px 3px #333;
+}
+#exp .exp_in .store1 h4{
+  font-size: 24px;
+  text-align: center;
+  line-height: 30px;
+}
+#exp .exp_in .store1 h5{
+  font-size: 30px;
+  text-align: center;
+  margin-top: 20px;
+}
+#exp .exp_in .store2{
+  position: absolute;
+  width: 250px;
+  height: 120px;
+  border: 2px solid #333;
+  border-radius: 15px;
+  top: 100px;
+  left: 800px;
+  padding: 10px;
+  cursor: pointer;
+  transition: all 0.3s;
+  animation: store 3s infinite alternate;
+}
+#exp .exp_in .store2:hover{
+  box-shadow: 1px 3px #333;
+}
+#exp .exp_in .store2 h4{
+  font-size: 24px;
+  text-align: center;
+  line-height: 30px;
+}
+#exp .exp_in .store2 h5{
+  font-size: 30px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+#exp .exp_in .store3{
+  position: absolute;
+  width: 250px;
+  height: 120px;
+  border: 2px solid #333;
+  border-radius: 15px;
+  top: 100px;
+  left: 1100px;
+  padding: 10px;
+  cursor: pointer;
+  transition: all 0.3s;
+  animation: store 3s infinite alternate;
+}
+#exp .exp_in .store3:hover{
+  box-shadow: 1px 3px #333;
+}
+#exp .exp_in .store3 h4{
+  font-size: 24px;
+  text-align: center;
+  line-height: 30px;
+}
+#exp .exp_in .store3 h5{
+  font-size: 30px;
+  text-align: center;
+  margin-top: 20px;
+}
+@keyframes car{
+  0%{
+    left: -300px;
+    bottom: 1px;
+  }
+  100%{
+    left: 800px;
+  }
+}
+@keyframes store{
+  0%{
+    top: 100px;
+  }
+  100%{
+    top: 110px;
+  }
+}
+
+/* -----footer > sitemap----- */
+footer #sitemap{
+  width: 1400px;
+  margin: 0 auto;
+  position: relative;
+}
+footer #sitemap .sitemap_in .sitemap_btn{
+  position: absolute;
+  top: -40px;
+  width: 100px;
+  height: 40px;
+  left: 660px;
+  background: #6b4b34;
+  color: #fff;
+  text-align: center;
+  line-height: 40px;
+  cursor: pointer;
+  border-radius: 10px 10px 0 0;
+  z-index: 100;
+}
+footer #sitemap .sitemap_in .sitemap_show{
+  background: url(../image/sitemap_1.png);
+  width: 1400px;
+  height: 0px;
+  display: none;
+}
+footer #sitemap .sitemap_in .sitemap_show ul li{
+  float: left;
+  width: 280px;
+  height: 50px;
+  color: #fff;
+  font-size: 22px;
+  line-height: 50px;
+  text-align: center;
+}
+footer #sitemap .sitemap_in .sitemap_show ul li .site_sub li a{
+  padding-bottom: 5px;
+  font-size: 18px;
+}
+footer #sitemap .sitemap_in .sitemap_show ul li .site_sub li a:hover{
+  border-bottom: 1px solid #fff;
+}
+footer #footer_bottom{
+  width: 1400px;
+  height: 200px;
+  margin: 0 auto;;
+  background: #005c3d;
+  position: relative;
+}
+footer #footer_bottom .footer_bottom_in ul li{
+  float: left;
+  color: #fff;
+  width: 280px;
+  font-size: 20px;
+  text-align: center;
+  padding: 20px 0;
+  transition: all 0.3s;
+}
+footer #footer_bottom .footer_bottom_in ul li:hover{
+  background: #017750;
+}
+footer #footer_bottom .footer_bottom_in .footer_bottom_text{
+  position: absolute;
+  top: 100px;
+}
+footer #footer_bottom .footer_bottom_in .footer_bottom_text span{
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+  margin-left: 82px;
+  margin-top: 100px;
+}
+footer #footer_bottom .footer_bottom_in .footer_bottom_text p{
+  font-size: 18px;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 44px;
+  margin-left: 120px;
+}
+
+
